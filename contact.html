@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="myscripts.js"></script>
     <title>Emma Snider Portfolio-Contact</title>
 </head>
 <body>
     <header>
+        
          <nav>
           <div class="nav-container">
               <ul class="navbar">
@@ -28,38 +31,39 @@
                 </li>
               </ul>
               <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a class="nav-link" href="about.html">about</a>                  
+                    <a class="nav-link" href="index.html">home</a>                  
                     <a class="nav-link" href="about.html">about</a>
                     <a class="nav-link" href="gallery.html">gallery</a>
                     <a class="nav-link" href="contact.html">contact</a>
                 </div>
               </div>
+              </div>
             </div>
-        </nav>
+        </nav> 
+        <h1 id="contacth1">Contact Me</h1>
     </header>
-    
+
     <main>
-        <section id="contact" class="contact-us">
-            <h2 class="contacth2">Contact Us</h2>
-                <div class="contact-us">
+                <div class="contactbox">
+                    <div class="contactoffset">
                     <form action="send">
                         <div class="message-padding">
                             <p class="text-padding">
-                                <label for="fullname" class="name">Name</label>
+                                <label for="fullname" class="name">name</label>
                             </p>
                             <input type="text" id="fullname" name="fullname">
                         </div>
                         <div class="message-padding">
                             <p class="text-padding">
-                                <label for="youremail" class="email">Email</label>
+                                <label for="youremail" class="email">email</label>
                             </p>
                             <input type="email" id="youremail" name="youremail">
                         </div>  
                         <div class="message-padding">
                             <p class="text-padding">
-                                <label for="message" class="message">Message</label>
+                                <label for="message" class="message">message</label>
                             </p>
                             <textarea name="message" id="message" class="message-box"></textarea>
                         </div>
@@ -67,9 +71,11 @@
                             <button class="send-button">send</button>
                         </div>
                     </form>
+                    </div>
                 </div>
-                <img src="images/milkyway.jpg" class="galleryimagebox" id="milkyway" alt="milkyway">
-       </section>
+                <div class="imagebox">
+                    <img src="images/milkyway.jpg" id="milkyway" alt="milkyway">
+                </div>
       </main>
  
  <footer>

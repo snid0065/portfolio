@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="myscripts.js"></script>
     <title>Emma Snider Portfolio-Gallery</title>
 </head>
 <body>
     <header>
         <nav>
-          <div class="nav-container">
-              <ul class="navbar">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">about</a>
+            <div class="nav-container">
+                <ul class="navbar">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">home</a>
                   </li>
-                  <li>
-                    <img src="images/es-logo.png" id="logo" alt="Emma Snider Logo">
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li>
+                      <img src="images/es-logo.png" id="logo" alt="Emma Snider Logo">
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">gallery</a>
                   </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">gallery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">contact</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                  </li>
+                </ul>
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Menu</button>
+                  <div id="myDropdown" class="dropdown-content">
+                      <a class="nav-link" href="index.html">home</a>                  
+                      <a class="nav-link" href="about.html">about</a>
+                      <a class="nav-link" href="gallery.html">gallery</a>
+                      <a class="nav-link" href="contact.html">contact</a>
+                  </div>
+                </div>
+              </div>
+          </nav> 
         <h1 id="galleryh1">Gallery</h1>
       </header>
 
