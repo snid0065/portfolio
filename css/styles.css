@@ -85,16 +85,22 @@ html{
     top: 5px;
     right: 5px;
   }
+
+  #dropimg {
+    max-width: 50px;
+  }
   
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
-    position: fixed;
+    position: absolute;
+    top: 100%;
+    left: -100%;
     background-color: #f1f1f1;
     max-width: 300px;
     min-width:160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 100;
   }
   
   /* Links inside the dropdown */
@@ -112,53 +118,250 @@ html{
   .show {display:block;}
 
   /*---------------------------------------------Home Page-----------------------------------------------*/
- .headerimage {
-   max-width: 100vw;
-   position:absolute;
- }
-
-  .homeh1{
-    font-size: 38px;
+  #aestethic {
+    max-width: 100vw;
     position: absolute;
-
+    margin: 0;
   }
+
+  #homeh1{
+    top: 280px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 100;
+    margin:0;
+    position: relative;
+    color: white;
+    z-index:5;
+  }
+
   .navbar {
     visibility: hidden;
     max-height: 1px;
-
   }
+  .homebox1 {
+    color: #6D6562;
+    z-index:10;
+    position:relative; 
+    margin: 25px;
+    padding-top:300px;
+    display: grid;
+      grid-template-columns: 0.5fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "homeaboutbuttonpadding wyntk wyntk"
+        "homeaboutbuttonpadding homebox1p homebox1p"
+        "homeaboutbuttonpadding homebox1p homebox1p";
+    }
+
+    
+    #wyntk { 
+      grid-area: wyntk;
+      background-color: white;
+      margin:0px;
+      padding-top:25px;
+     }
+    
+    #homebox1p { 
+      grid-area: homebox1p; 
+      background-color: white;
+      margin:0px;
+      padding-bottom:25px;
+      padding-right: 25px;
+      line-height: 20px;
+    }
+    
+    #homeaboutbutton { 
+      position: absolute;
+      background-color: #03012C;
+     color: #ddd;
+     border: none;
+     padding: 15px;
+      writing-mode: vertical-lr;
+      text-orientation: mixed;
+      transform: rotate(270deg);
+      border-radius: 50px;
+      width: 180px;
+      height:auto;
+    }
+
+    #homeaboutbuttonpadding {
+      grid-area: homeaboutbuttonpadding;
+      background-color: white;
+      margin:0;
+      padding-top:180px;
+    }
+    
+    .homeimage {
+    padding:25px;
+     margin-left: auto;
+     margin-right: auto;
+    }
+
+  #mushroom {
+    max-width: 100%;
+    z-index:0;
+    
+  }
+  
+  .homebox2 {
+    background-color: white;
+    margin: 25px;
+    padding:25px;
+    color: #6D6562;
+    z-index:10;
+    position:relative; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 0.5fr; 
+    grid-template-rows: 0.3fr 1.6fr 1.1fr; 
+    grid-template-areas: 
+      "homebox2h2 . ."
+      "box2p1 box2p2 homecontactbuttonpadding"
+      "box2p1 box2p2 ."; 
+  }
+
+  #homebox2h2 {
+     grid-area: homebox2h2; 
+    }
+
+  #box2p1 { 
+    grid-area: box2p1; 
+  }
+
+  #homecontactbutton {
+    position: absolute;
+    background-color: #03012C;
+    color: #ddd;
+    border: none;
+    top: 170px;
+    padding: 15px;
+    right: -25px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(270deg);
+    border-radius: 50px;
+    width: 180px;
+    height:auto;
+  }
+  #homecontactbuttonpadding { 
+    grid-area: homecontactbuttonpadding; 
+    background-color: white;
+    margin:0;
+    padding-top: 50px;
+    padding-right: auto;
+  }
+
+  #box2p2 { 
+    grid-area: box2p2; 
+  }
+ 
+  #forestportrait {
+    max-width: 90%;
+  }
+     /*---------------------------------------------About Page------------------------------------------*/
+
+     #abouth1 {
+      font-family: Verdana, Tahoma, sans-serif;
+      font-size: 3.5rem;
+      color: white;
+      font-weight: 100;
+      margin:30px;
+     }
+
+     #boudoirportrait {
+      max-width: 80%;
+      margin-right: auto;
+      margin: 25px;
+      margin-left: 50px;
+      box-shadow: -1.72rem 1.72rem #03012C;
+     }
+
+     .aboutbox1 {
+      color: white;
+      z-index: 2;
+      position: relative;
+      margin: 25px;
+      padding: 15px;
+     }
+
+     .aboutoffset1 {
+      z-index: 0;
+      background-color: #03012C;
+      padding-top: 30px;
+      padding-right: 30px;
+      box-shadow: -1.72rem 1.72rem #B5A886;
+     }
+
+     .aboutoffset2 {
+      z-index: 1;
+      background-color: rgba(181,168,134,0.6);
+      padding-top: 16px;
+      padding-left: 25px;
+      padding-bottom: -15px;
+      left: -55px;
+     }
+     #aboutgallerybutton {
+      background-color: #03012C;
+      color: #ddd;
+      border: none;
+      border-radius: 50px;
+      width: 180px;
+      height:50px;
+      margin: 15px;
+     }
 
     /*---------------------------------------------Contact Page------------------------------------------*/
 
     #contacth1 {
       font-family: Verdana, Tahoma, sans-serif;
-      font-size: 4rem;
+      font-size: 3.5rem;
       color: white;
       font-weight: 100;
       margin:0;
     }
 
+    .text-padding {
+      padding: 5px;
+    }
+
+    .message-padding {
+      padding: 5px;
+    }
+
      .contactbox {
       color: white;
+      z-index: 2;
       position: relative;
-      background-color: #03012C;
       margin: 25px;
-      padding-top: 15px;
-      padding-right: 30px;
+      padding: 15px;
     } 
 
-    .contactoffset {
+    .contactoffset1 {
+      z-index: 0;
+      background-color: #03012C;
+      padding-top: 30px;
+      padding-right: 30px;
+      box-shadow: -1.72rem 1.72rem #B5A886;
+    } 
+
+    .contactoffset2 {
+      z-index: 1;
       background-color: rgba(181,168,134,0.6);
-      padding-bottom: 15px;
-      padding-left: 15px;
+      padding-bottom: -15px;
+      left: -55px;
     }
 
     .imagebox {
-      background-color: #03012C;
-      margin: 25px;
+      box-shadow: 1.72rem 1.72rem #03012C;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 75%;
     }
 
     #milkyway { 
-      max-width: 75%;
-      padding-top: 15px;
+      width: 100%;
+      padding-top: 25px;
     }
+
+  
