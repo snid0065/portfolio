@@ -310,7 +310,194 @@ html{
       height:50px;
       margin: 15px;
      }
+    /*---------------------------------------------Gallery Page------------------------------------------*/
+    #dancedress {
+      max-width: 100vw;
+      position: absolute;
+      margin: 0;
+    }
+  
+    #galleryh1{
+      top: 280px;
+      font-family: Verdana, Tahoma, sans-serif;
+      font-size: 3.5rem;
+      color: white;
+      font-weight: 100;
+      margin:0;
+      position: relative;
+      color: white;
+      z-index:5;
+    }
+    .galleryp1 {
+      padding-top: 300px;
+      color: white;
+      
+    }
+    #gallerywelcome {
+      background-color: rgba(181,168,134,0.6);
+      padding: 15px;
+      font-size: larger;
+    }
 
+    .gallerybox1 {  
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 0px; 
+      grid-template-areas:
+        "moon1 sunset greeneye"
+        "blackportrait hands oilspill"
+        "fire treelandscape moon2";
+    }
+    
+    #gallerybox1h2 { 
+     color:white;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #moon1 { 
+      grid-area: moon1; 
+  
+    }
+    
+    #sunset { 
+      grid-area: sunset; 
+    }
+    
+    #greeneye { 
+      grid-area: greeneye; 
+    }
+    
+    #blackportrait { 
+      grid-area: blackportrait; 
+    }
+    
+    #hands { 
+      grid-area: hands; 
+    }
+    
+    #oilspill { 
+      grid-area: oilspill; 
+    }
+    
+    #fire { 
+      grid-area: fire; 
+    }
+    
+    #treelandscape { 
+      grid-area: treelandscape; 
+    }
+    
+    #moon2 { 
+      grid-area: moon2; 
+    }
+    
+     .gallery1img {
+       width: 100%;
+       transition: all 1s ease-in-out;
+     }
+
+    .gallery1img:hover { 
+      transform: scale(1.5); 
+    }
+
+     .gallerybox2 {  
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 0px; 
+      grid-template-areas:
+        "forest chamaleon moutainside"
+        "purpleportrait mushroom jellyfish"
+        "teapot parrot forestportrait";
+    }
+    
+    #gallerybox2h2 { 
+     color:white;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #forest { 
+      grid-area: forest; 
+  
+    }
+    
+    #chamaleon { 
+      grid-area: chamaleon; 
+    }
+    
+    #moutainside { 
+      grid-area: moutainside; 
+    }
+    
+    #purpleportrait { 
+      grid-area: purpleportrait; 
+    }
+    
+    #mushroom { 
+      grid-area: mushroom; 
+    }
+    
+    #jellyfish { 
+      grid-area: jellyfish; 
+    }
+    
+    #teapot { 
+      grid-area: teapot; 
+    }
+    
+    #parrot { 
+      grid-area: parrot; 
+    }
+    
+    #forestportrait { 
+      grid-area: forestportrait; 
+    }
+    
+    .gallery2img {
+      width: 100%;
+      transition: all 1s ease-in-out;
+    }
+
+   .gallery2img:hover { 
+     transform: scale(1.5); 
+   }
+
+     #gallerybox3h2 { 
+      color:white;
+       margin-left: auto;
+       margin-right: auto;
+     }
+     .gallerybox3 {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "airplane turtle bigben"
+        "whitelandscape treeportrait pigeon"
+        "books flying moutains"; 
+    }
+    #airplane { grid-area: airplane; }
+    #turtle { grid-area: turtle; }
+    #bigben { grid-area: bigben; }
+    #whitelandscape { grid-area: whitelandscape; }
+    #treeportrait { grid-area: treeportrait; }
+    #pigeon { grid-area: pigeon; }
+    #books { grid-area: books; }
+    #flying { grid-area: flying; }
+    #moutains { grid-area: moutains; }
+    
+    .gallery3img {
+      width: 100%;
+      transition: all 1s ease-in-out;
+    }
+
+   .gallery3img:hover { 
+     transform: scale(1.5); 
+   }
     /*---------------------------------------------Contact Page------------------------------------------*/
 
     #contacth1 {
@@ -323,10 +510,12 @@ html{
 
     .text-padding {
       padding: 5px;
+      left: 15px;
     }
 
     .message-padding {
       padding: 5px;
+      left: 25px;
     }
 
      .contactbox {
@@ -354,14 +543,13 @@ html{
 
     .imagebox {
       box-shadow: 1.72rem 1.72rem #03012C;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 75%;
+      top: 15px;
+      padding:0;
+      margin:50px;
     }
 
     #milkyway { 
       width: 100%;
-      padding-top: 25px;
     }
 
   
