@@ -146,6 +146,10 @@ html{
     height: 0px;
     margin:0px;
   }
+
+  .group {
+    line-height: 30px;
+  }
   .homebox1 {
     color: #6D6562;
     z-index:10;
@@ -258,7 +262,7 @@ html{
     background-color: white;
     margin:0;
     padding-top: 50px;
-    padding-right: auto;
+    right: auto;
   }
 
   #box2p2 { 
@@ -320,7 +324,7 @@ html{
       background-color: rgba(181,168,134,0.6);
       padding-top: 16px;
       padding-left: 25px;
-      padding-bottom: -15px;
+      bottom: -15px;
       left: -55px;
      }
 
@@ -573,7 +577,7 @@ html{
     .contactoffset2 {
       z-index: 1;
       background-color: rgba(181,168,134,0.6);
-      padding-bottom: -15px;
+      bottom: -15px;
       left: -55px;
     }
 
@@ -947,6 +951,7 @@ text-align: center;
 #homeaboutbutton {
   padding: 25px;
   width: 250px;
+  font-size: 26px;
 }
 
 .home2 {
@@ -1004,17 +1009,35 @@ text-align: center;
     padding: 25px;
     width: 250px;
     top: 300px;
+    font-size:  26px;
   }
 
 .homefooter {
  position: relative;
- padding-top: 790px;
+ padding-top: 780px;
 }
 
      /*---------------------------------------------About Page------------------------------------------*/
-    .aboutimagebox {
+    
+    .about {
+      display: flex;
+    }
+     .aboutimagebox {
       display: flex;
       justify-content: center;
+      max-width: 50%;
+    }
+
+    .aboutbox1 {
+      max-width: 50%;
+    }
+
+    #aboutgallerybutton {
+      font-size: 26px;
+    }
+
+    .aboutfooter {
+      padding-top: 100px;
     }
 
   
@@ -1118,7 +1141,11 @@ text-align: center;
     }
     
     /*---------------------------------------------Contact Page------------------------------------------*/
-   #contacth1 {
+   .contact {
+     display: flex;
+   }
+   
+    #contacth1 {
       top: 10px;
       left: 60px;
       width: 340px;
@@ -1128,9 +1155,10 @@ text-align: center;
    
     .contactbox { 
       left: 10px;
-      max-width: 1200px;
+      width: 50%;
+      /* max-width: 1200px; 
       margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto; */
     
     }
   
@@ -1138,14 +1166,15 @@ text-align: center;
       box-shadow: 1.72rem 1.72rem #03012C;
       padding:0;
       margin:50px;
-      max-width: 500px;
+      width: 50%;
+      /* max-width: 500px;
       margin-left: auto;
-      margin-right: auto;
+      margin-right: auto; */
     }
   
     #milkyway { 
       width: 100%;
-      max-width: 500px;
+      max-width: 600px;
     }
   
   }
