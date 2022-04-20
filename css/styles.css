@@ -196,7 +196,10 @@ html{
       grid-area: homeaboutbuttonpadding;
       background-color: white;
       margin:0;
-      padding-top:180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
    
     .homeimage1 {
@@ -248,6 +251,7 @@ html{
     border-radius: 50px;
     width: 180px;
     height:auto;
+    
   }
   #homecontactbuttonpadding { 
     grid-area: homecontactbuttonpadding; 
@@ -321,7 +325,10 @@ html{
      }
 
      .aboutgallerybuttondiv {
-       margin-left: 30%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
      }
      #aboutgallerybutton {
       background-color: #03012C;
@@ -679,15 +686,18 @@ html{
    display: flex;
    flex-direction: row-reverse;
    height: 500px;
+  min-width: 800px;
+   justify-content: center;
+   align-items: center;
  }
 
 .homebox1 {
-  width: 100%;
-  min-width: 400px;
-  left: 90px;
+  top: 150px;
+   min-width: 400px;
+   width: 100%;
   height: 425px;
-  position: relative;
-  
+  position: relative; 
+  right: 20px;
 }
 #mushroom {
   height:425px;
@@ -696,8 +706,9 @@ html{
 
 .homeimage1 {
   top: 300px;
-  left: 150px;
   position: relative;
+  left: 30px;
+  
 }
 
 .home2 {
@@ -705,25 +716,34 @@ html{
   flex-direction: row;
   height: 500px;
   margin-bottom: 50px;
+  min-width: 800px;
+  justify-content: center;
+  align-items: center;
 }
 
 .homebox2 {
-  top:250px;
-  width: 100%;
-  right: 5px;
+  top:300px;
   min-width: 400px;
+  width: 100%;
   height: 380px;
   position: relative; 
+  left: 60px;
 }
 
 #forestportrait {
   height:425px;
   max-width: 400px;
+  
 }
 .homeimage2 {
-  top: 250px;
-  right: 60px;
+  top: 300px;
   position: relative;
+  right: 30px;
+}
+
+.homefooter {
+  position: relative;
+  padding-top: 220px;
 }
 
    /*---------------------------------------------About Page------------------------------------------*/
@@ -857,11 +877,276 @@ html{
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------TABLET STYLES-------------------------------------------------------------*/
+/*--------------------------------------------------------------WEB STYLES-------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
  
- 
+
 @media screen and (min-width: 1200px){ 
 
+/*-----------------------------------------------------------------HOME PAGE------------------------------------------------------------------------*/
 
+  #aestethic {
+    width: 100vw;
+    max-height: 615px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+  }
+
+  #homeh1{
+    position: absolute;
+    padding-top: 290px;
+    font-size: 5.5rem;
+    z-index:5;
+  }
+
+
+ .home1 {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 600px;
+ min-width: 800px;
+  justify-content: center;
+  align-items: center;
 }
+
+.homebox1 {
+ top: 550px;
+  min-width: 600px;
+  width: 100%;
+ height: 625px;
+ position: relative; 
+ right: 20px;
+}
+#mushroom {
+ height:625px;
+ max-width: 600px;
+}
+
+.homeimage1 {
+ top: 700px;
+ position: relative;
+ left: 30px;
+}
+
+#wyntk {
+  font-size: 36px;
+}
+#homebox1p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#homeaboutbuttonpadding {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+#homeaboutbutton {
+  padding: 25px;
+  width: 250px;
+}
+
+.home2 {
+ display: flex;
+ flex-direction: row;
+ height: 600px;
+ margin-bottom: 50px;
+ min-width: 800px;
+ justify-content: center;
+ align-items: center;
+}
+
+.homebox2 {
+ top:800px;
+ min-width: 600px;
+ width: 100%;
+ height: 580px;
+ position: relative; 
+ left: 60px;
+}
+
+#homebox2h2 {
+  font-size: 36px;
+}
+
+#forestportrait {
+ height:625px;
+ max-width: 600px;
+ 
+}
+.homeimage2 {
+ top: 800px;
+ position: relative;
+ right: 30px;
+}
+
+#box2p1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#box2p2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#homecontactbuttonpadding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+  #homecontactbutton {
+    padding: 25px;
+    width: 250px;
+    top: 300px;
+  }
+
+.homefooter {
+ position: relative;
+ padding-top: 790px;
+}
+
+     /*---------------------------------------------About Page------------------------------------------*/
+    .aboutimagebox {
+      display: flex;
+      justify-content: center;
+    }
+
+  
+    /*---------------------------------------------Gallery Page------------------------------------------*/
+    #dancedress {
+      height: 500px;
+     max-width: 1500px;
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+    }
+  
+    .galleryp1 {
+      padding-top:10px;
+      color: white;
+      z-index: 10;
+    }
+    #gallerywelcome {
+      max-width: 1500px;
+      display: flex;
+     margin-left: auto;
+     margin-right: auto;
+  
+    }
+  
+    .galbox1 {
+      display: flex;
+    }
+  
+    .gallerybox1 {
+      max-width: 850px;
+      max-height: 850px;
+    }
+  
+    .gallerybox1padding {
+      height: 850px;
+    }
+  
+    #gallerybox1h2 {
+      border-radius: 40px;
+      width:250px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    .galbox2 {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  
+    .gallerybox2 {
+      margin-top: 50px;
+      max-width: 850px;
+      max-height: 850px;
+    }
+  
+    .gallerybox2padding {
+      height: 850px;
+    }
+    #gallerybox2h2 {
+      border-radius: 40px;
+      width:250px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .galbox3 {
+      display: flex;
+    }
+  
+    .gallerybox3 {
+      margin-top: 50px;
+      max-width: 850px;
+      max-height: 850px;
+    }
+  
+    .gallerybox3padding {
+      
+      height: 850px;
+      width: 50%;
+      left: 10px;
+      display:flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+
+    #gallerybox3h2 {
+      border-radius: 40px;
+      width:250px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    
+    /*---------------------------------------------Contact Page------------------------------------------*/
+   #contacth1 {
+      top: 10px;
+      left: 60px;
+      width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+   
+    .contactbox { 
+      left: 10px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto; 
+    
+    }
+  
+    .imagebox {
+      box-shadow: 1.72rem 1.72rem #03012C;
+      padding:0;
+      margin:50px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #milkyway { 
+      width: 100%;
+      max-width: 500px;
+    }
+  
+  }
+  
