@@ -58,7 +58,9 @@ table {
 
 html{
   font-family:  Arial, Helvetica, sans-serif;
+  font-size: 16px;
   background-color: #708D81;
+  max-width: 2080px;
 }
   /*--------------------------------------------Navigation---------------------------------------------------*/
 
@@ -103,6 +105,7 @@ html{
     z-index: 100;
   }
   
+  
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
@@ -112,14 +115,17 @@ html{
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
+  .dropdown-content a:hover {
+    background-color: #ddd}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
 
   /*---------------------------------------------Home Page-----------------------------------------------*/
   #aestethic {
-    max-width: 100vw;
+    width: 100vw;
+    max-width: 1200px;
+    max-height: 315px;
     position: absolute;
     margin: 0;
   }
@@ -135,10 +141,10 @@ html{
     color: white;
     z-index:5;
   }
-
   .navbar {
     visibility: hidden;
-    max-height: 1px;
+    height: 0px;
+    margin:0px;
   }
   .homebox1 {
     color: #6D6562;
@@ -192,17 +198,16 @@ html{
       margin:0;
       padding-top:180px;
     }
-    
-    .homeimage {
-    padding:25px;
-     margin-left: auto;
-     margin-right: auto;
+   
+    .homeimage1 {
+      margin: 25px;
+    }
+    .homeimage2 {
+      margin: 25px;
     }
 
   #mushroom {
     max-width: 100%;
-    z-index:0;
-    
   }
   
   .homebox2 {
@@ -257,10 +262,16 @@ html{
   }
  
   #forestportrait {
-    max-width: 90%;
+    max-width: 100%;
   }
      /*---------------------------------------------About Page------------------------------------------*/
-
+    
+     .abouth1div {
+      width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
      #abouth1 {
       font-family: Verdana, Tahoma, sans-serif;
       font-size: 3.5rem;
@@ -268,12 +279,17 @@ html{
       font-weight: 100;
       margin:30px;
      }
+   .aboutimagebox {
+     justify-content: center;
+
+   }
 
      #boudoirportrait {
-      max-width: 80%;
+      width: 80%;
+      max-width: 1000px;
       margin-right: auto;
       margin: 25px;
-      margin-left: 50px;
+      margin-left: 12%;
       box-shadow: -1.72rem 1.72rem #03012C;
      }
 
@@ -281,6 +297,8 @@ html{
       color: white;
       z-index: 2;
       position: relative;
+      margin-left: auto;
+      margin-right: auto;
       margin: 25px;
       padding: 15px;
      }
@@ -301,6 +319,10 @@ html{
       padding-bottom: -15px;
       left: -55px;
      }
+
+     .aboutgallerybuttondiv {
+       margin-left: 30%;
+     }
      #aboutgallerybutton {
       background-color: #03012C;
       color: #ddd;
@@ -312,13 +334,19 @@ html{
      }
     /*---------------------------------------------Gallery Page------------------------------------------*/
     #dancedress {
-      max-width: 100vw;
+      max-width: 100%;
+      height: 270px;
       position: absolute;
       margin: 0;
+      width: 100vw;
+     margin: 0;
+     z-index: -1;
+     margin-left: auto;
+     margin-right: auto;
     }
   
     #galleryh1{
-      top: 280px;
+      top: 180px;
       font-family: Verdana, Tahoma, sans-serif;
       font-size: 3.5rem;
       color: white;
@@ -329,7 +357,7 @@ html{
       z-index:5;
     }
     .galleryp1 {
-      padding-top: 300px;
+      padding-top:200px;
       color: white;
       
     }
@@ -350,52 +378,40 @@ html{
         "fire treelandscape moon2";
     }
     
-    #gallerybox1h2 { 
-     color:white;
+    .gallerybox1padding { 
+     background-color: white;
+     height: 75px;
+     padding-top: 10px;
+     text-align:center;
+     margin-left: auto;
+     margin-right: auto;
+    }
+
+    #gallerybox1h2 {
+      background-color: #03012C;
+      color: white;
+      font-weight: 100;
+      border-radius: 40px;
+      width:200px;
+      height: 30px;
       margin-left: auto;
       margin-right: auto;
     }
     
-    #moon1 { 
-      grid-area: moon1; 
-  
-    }
-    
-    #sunset { 
-      grid-area: sunset; 
-    }
-    
-    #greeneye { 
-      grid-area: greeneye; 
-    }
-    
-    #blackportrait { 
-      grid-area: blackportrait; 
-    }
-    
-    #hands { 
-      grid-area: hands; 
-    }
-    
-    #oilspill { 
-      grid-area: oilspill; 
-    }
-    
-    #fire { 
-      grid-area: fire; 
-    }
-    
-    #treelandscape { 
-      grid-area: treelandscape; 
-    }
-    
-    #moon2 { 
-      grid-area: moon2; 
-    }
+    #moon1 {  grid-area: moon1;  }
+    #sunset { grid-area: sunset;  }
+    #greeneye {  grid-area: greeneye;  }
+    #blackportrait {  grid-area: blackportrait;  }
+    #hands { grid-area: hands;  }
+    #oilspill { grid-area: oilspill; } 
+    #fire { grid-area: fire; }   
+    #treelandscape {  grid-area: treelandscape;  }
+    #moon2 { grid-area: moon2; }
     
      .gallery1img {
        width: 100%;
        transition: all 1s ease-in-out;
+       animation-delay: 5s;
      }
 
     .gallery1img:hover { 
@@ -409,52 +425,41 @@ html{
       gap: 0px 0px; 
       grid-template-areas:
         "forest chamaleon moutainside"
-        "purpleportrait mushroom jellyfish"
-        "teapot parrot forestportrait";
+        "purpleportrait mushroomgal jellyfish"
+        "teapot parrot forestportraitgal";
     }
     
-    #gallerybox2h2 { 
-     color:white;
+    .gallerybox2padding { 
+      background-color: white;
+      margin-top: 25px;;
+      height: 75px;
+      padding-top: 10px;
+      text-align:center;
       margin-left: auto;
       margin-right: auto;
-    }
+     }
+ 
+     #gallerybox2h2 {
+       background-color: #03012C;
+       color: white;
+       font-weight: 100;
+       border-radius: 40px;
+       width:200px;
+       height: 30px;
+       margin-left: auto;
+       margin-right: auto;
+     }
+     
     
-    #forest { 
-      grid-area: forest; 
-  
-    }
-    
-    #chamaleon { 
-      grid-area: chamaleon; 
-    }
-    
-    #moutainside { 
-      grid-area: moutainside; 
-    }
-    
-    #purpleportrait { 
-      grid-area: purpleportrait; 
-    }
-    
-    #mushroom { 
-      grid-area: mushroom; 
-    }
-    
-    #jellyfish { 
-      grid-area: jellyfish; 
-    }
-    
-    #teapot { 
-      grid-area: teapot; 
-    }
-    
-    #parrot { 
-      grid-area: parrot; 
-    }
-    
-    #forestportrait { 
-      grid-area: forestportrait; 
-    }
+    #forest { grid-area: forest; }
+    #chamaleon { grid-area: chamaleon; }
+    #moutainside { grid-area: moutainside; }
+    #purpleportrait {  grid-area: purpleportrait; }
+    #mushroomgal { grid-area: mushroomgal; }
+    #jellyfish { grid-area: jellyfish; }
+    #teapot { grid-area: teapot; }
+    #parrot { grid-area: parrot; }
+    #forestportraitgal { grid-area: forestportraitgal; }
     
     .gallery2img {
       width: 100%;
@@ -467,9 +472,9 @@ html{
 
      #gallerybox3h2 { 
       color:white;
-       margin-left: auto;
-       margin-right: auto;
+       
      }
+     
      .gallerybox3 {
       display: grid; 
       grid-template-columns: 1fr 1fr 1fr; 
@@ -489,6 +494,27 @@ html{
     #books { grid-area: books; }
     #flying { grid-area: flying; }
     #moutains { grid-area: moutains; }
+
+    .gallerybox3padding { 
+      background-color: white;
+      margin-top: 25px;;
+      height: 75px;
+      padding-top: 10px;
+      text-align:center;
+      margin-left: auto;
+      margin-right: auto;
+     }
+ 
+     #gallerybox3h2 {
+       background-color: #03012C;
+       color: white;
+       font-weight: 100;
+       border-radius: 40px;
+       width:200px;
+       height: 30px;
+       margin-left: auto;
+       margin-right: auto;
+     }
     
     .gallery3img {
       width: 100%;
@@ -519,6 +545,9 @@ html{
     }
 
      .contactbox {
+       max-width: 1200px;
+       margin-left: auto;
+       margin-left: auto;
       color: white;
       z-index: 2;
       position: relative;
@@ -541,15 +570,298 @@ html{
       left: -55px;
     }
 
+    .text-padding {
+      margin: 15px;
+    }
+   
+    #fullname {
+      margin: 15px;
+      width: 95%;
+      height: 20px;
+    }
+
+    #youremail {
+      margin: 15px;
+      width: 95%;
+      height: 20px;
+    }
+
+    #message {
+      margin: 15px;
+      width: 95%;
+      height: 75px;
+    }
+
+    .send-button {
+      background-color: #03012C;
+     color: #ddd;
+     border: none;
+     margin: 15px;
+     padding: 15px;
+      border-radius: 50px;
+      width: 180px;
+      height:auto;
+    }
+
     .imagebox {
       box-shadow: 1.72rem 1.72rem #03012C;
       top: 15px;
       padding:0;
       margin:50px;
-    }
-
+    } 
+    
     #milkyway { 
       width: 100%;
     }
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------TABLET STYLES-------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+ 
+@media screen and (min-width: 820px){
 
+  /*--------------------------------------------Navigation---------------------------------------------------*/
+.dropdown {
+  visibility: hidden;
+  max-height: 1px;
+ }
+ .navbar{
+   visibility: visible;
+   height:30px;
+   max-width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   z-index: 1;
+   background-color: rgba(181,168,134,0.6);
+ }
+
+  .nav-container ul{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px #707070;
+    padding:15px;
+  }
+
+  .nav-item {
+    display: block;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: white;
+  }
+
+ #logo {
+   max-width: 50px;
+ }
+ 
+
+/*---------------------------------------------Home Page-----------------------------------------------*/
+#aestethic {
+  width: 100vw;
+  margin: 0;
+  z-index: -1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#homeh1{
+  position: absolute;
+  padding-top: 10px;
+  z-index:5;
+}
+
+
+ .home1 {
+   display: flex;
+   flex-direction: row-reverse;
+   height: 500px;
+ }
+
+.homebox1 {
+  width: 100%;
+  min-width: 400px;
+  left: 90px;
+  height: 425px;
+  position: relative;
   
+}
+#mushroom {
+  height:425px;
+  max-width: 400px;
+}
+
+.homeimage1 {
+  top: 300px;
+  left: 150px;
+  position: relative;
+}
+
+.home2 {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.homebox2 {
+  top:250px;
+  width: 100%;
+  right: 5px;
+  min-width: 400px;
+  height: 380px;
+  position: relative; 
+}
+
+#forestportrait {
+  height:425px;
+  max-width: 400px;
+}
+.homeimage2 {
+  top: 250px;
+  right: 60px;
+  position: relative;
+}
+
+   /*---------------------------------------------About Page------------------------------------------*/
+
+
+  /*---------------------------------------------Gallery Page------------------------------------------*/
+  #dancedress {
+    position: relative;
+    width: 100vw;
+   margin: 0;
+   z-index: -1;
+   max-width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  #galleryh1{
+    top: 10px;
+    left: 60px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .galleryp1 {
+    padding-top:10px;
+    color: white;
+    z-index: 10;
+  }
+  #gallerywelcome {
+    background-color: rgba(181,168,134,0.6);
+    padding: 15px;
+    font-size: larger;
+    z-index: 10;
+
+  }
+
+  .galbox1 {
+    display: flex;
+  }
+
+  .gallerybox1 {
+    max-width: 650px;
+    max-height: 650px;
+  }
+
+  .gallerybox1padding {
+    height: 650px;
+    width: 50%;
+    left: 10px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .galbox2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .gallerybox2 {
+    margin-top: 50px;
+    max-width: 650px;
+    max-height: 650px;
+  }
+
+  .gallerybox2padding {
+    margin-top: 50px;
+    height: 650px;
+    width: 50%;
+    left: 10px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+ 
+
+  .galbox3 {
+    display: flex;
+  }
+
+  .gallerybox3 {
+    margin-top: 50px;
+    max-width: 650px;
+    max-height: 650px;
+  }
+
+  .gallerybox3padding {
+    margin-top: 50px;
+    height: 650px;
+    width: 50%;
+    left: 10px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  /*---------------------------------------------Contact Page------------------------------------------*/
+ #contacth1 {
+    top: 10px;
+    left: 60px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .contactbox { 
+    left: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; 
+  
+  }
+
+  .imagebox {
+    box-shadow: 1.72rem 1.72rem #03012C;
+    padding:0;
+    margin:50px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #milkyway { 
+    width: 100%;
+    max-width: 500px;
+  }
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------TABLET STYLES-------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+ 
+@media screen and (min-width: 1200px){ 
+
+
+}
