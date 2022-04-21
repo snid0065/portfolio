@@ -196,6 +196,14 @@ html{
       height:auto;
     }
 
+    #homeaboutbutton:hover {
+      background-color: #6D6562;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #733D35;
+      box-shadow: 0.2rem 0.2rem #03012C;
+    }
+
     #homeaboutbuttonpadding {
       grid-area: homeaboutbuttonpadding;
       background-color: white;
@@ -255,7 +263,14 @@ html{
     border-radius: 50px;
     width: 180px;
     height:auto;
-    
+  }
+
+  #homecontactbutton:hover {
+    background-color: #6D6562;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #03012C;
+    box-shadow: 0.2rem 0.2rem #733D35;
   }
   #homecontactbuttonpadding { 
     grid-area: homecontactbuttonpadding; 
@@ -343,6 +358,15 @@ html{
       height:50px;
       margin: 15px;
      }
+
+     #aboutgallerybutton:hover {
+       background-color: #733D35;
+       color:#ddd;
+       border-width: 1px;
+       border-style: solid;
+       border-color: #03012C;
+       box-shadow: 0.2rem 0.2rem #03012C;
+     }
     /*---------------------------------------------Gallery Page------------------------------------------*/
     #dancedress {
       max-width: 100%;
@@ -357,7 +381,7 @@ html{
     }
   
     #galleryh1{
-      top: 180px;
+      top: 240px;
       font-family: Verdana, Tahoma, sans-serif;
       font-size: 3.5rem;
       color: white;
@@ -368,7 +392,7 @@ html{
       z-index:5;
     }
     .galleryp1 {
-      padding-top:200px;
+      padding-top:230px;
       color: white;
       
     }
@@ -612,6 +636,15 @@ html{
       border-radius: 50px;
       width: 180px;
       height:auto;
+    }
+
+    .send-button:hover {
+      background-color: #253258;
+      color:#ddd;
+      border-width: 1.5px;
+      border-style: solid;
+      border-color: #03012C;
+      box-shadow: 0.2rem 0.2rem #03012C;
     }
 
     .imagebox {
@@ -1060,20 +1093,23 @@ text-align: center;
       display: flex;
      margin-left: auto;
      margin-right: auto;
-  
     }
   
     .galbox1 {
       display: flex;
+      max-width: 1500px;
+      margin-left: auto;
+     margin-right: auto;
     }
   
     .gallerybox1 {
-      max-width: 850px;
-      max-height: 850px;
+      max-width: 750px;
+      max-height: 750px;
     }
   
     .gallerybox1padding {
-      height: 850px;
+      max-width: 750px;
+      height: 750px;
     }
   
     #gallerybox1h2 {
@@ -1087,18 +1123,24 @@ text-align: center;
     }
     .galbox2 {
       display: flex;
+      max-width: 1500px;
       flex-direction: row-reverse;
+      margin-left: auto;
+      margin-right: auto;
     }
   
     .gallerybox2 {
       margin-top: 50px;
-      max-width: 850px;
-      max-height: 850px;
+      max-width: 750px;
+      max-height: 750px;
     }
   
     .gallerybox2padding {
-      height: 850px;
+      right: 600px;
+      max-width: 750px;
+      height: 750px;
     }
+
     #gallerybox2h2 {
       border-radius: 40px;
       width:250px;
@@ -1111,17 +1153,19 @@ text-align: center;
   
     .galbox3 {
       display: flex;
+      max-width: 1500px;
+      margin-left: auto;
+     margin-right: auto;
     }
   
     .gallerybox3 {
       margin-top: 50px;
-      max-width: 850px;
-      max-height: 850px;
+      max-width: 750px;
+      max-height: 750px;
     }
   
     .gallerybox3padding {
-      
-      height: 850px;
+      height: 750px;
       width: 50%;
       left: 10px;
       display:flex;
@@ -1156,10 +1200,6 @@ text-align: center;
     .contactbox { 
       left: 10px;
       width: 50%;
-      /* max-width: 1200px; 
-      margin-left: auto;
-      margin-right: auto; */
-    
     }
   
     .imagebox {
@@ -1167,9 +1207,6 @@ text-align: center;
       padding:0;
       margin:50px;
       width: 50%;
-      /* max-width: 500px;
-      margin-left: auto;
-      margin-right: auto; */
     }
   
     #milkyway { 
